@@ -1,0 +1,54 @@
+html {
+  background-color: rgb(36, 35, 35);
+  color: rgb(216, 205, 186);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex: 2 1 auto;
+}
+
+button{
+  border-radius: 15px;
+  width: 200px;
+  height: 40px;
+  background-color: rgb(88, 97, 87);
+  color: rgb(216, 205, 186);
+}
+
+.PresentorBox {
+  display: flex;
+  justify-content: center;
+}
+
+.Log {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: larger;
+  max-width: fit-content;
+  .pass0{
+    color: green;
+  }
+  .pass2{
+    color: red;
+  }
+}
+
+.Generator{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: larger;
+}
+
+.App{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input{
+  text-align: center;
+  height: 20px;
+  width: 200px;
+}
