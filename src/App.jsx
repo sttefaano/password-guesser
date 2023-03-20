@@ -7,7 +7,7 @@ import { useState } from "react";
 
 function App() {
   const [genState, setGenState] = useState(0);
-  const [genPassword, setGenPassword] = useState([0, 0, 0]);
+  const [genPassword, setGenPassword] = useState([0, 0, 0, 0]);
   const [password, setPassword] = useState("");
   const [logResults, setLogResults] = useState([]);
 
@@ -26,7 +26,7 @@ function App() {
             setLogResults={setLogResults}
           />
           <Log logResults={logResults} genPassword={genPassword} />
-          <Reset setGenState={setGenState} />
+          <Reset setGenState={setGenState} setLogResults={setLogResults} />
         </>
       );
     }

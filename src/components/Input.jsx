@@ -8,7 +8,6 @@ function Input({ genPassword, setPassword, setLogResults } = props) {
       console.log(
         `Enter key pessed\n${password} was entered.\n${genPassword} is the pass generated.`
       );
-      console.log();
       addResultToLog(password, comparePassword(genPassword, password).join(""));
     }
   }
