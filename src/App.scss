@@ -1,9 +1,13 @@
+$text-color: rgb(216, 205, 186);
+$bkgrnd-color: rgb(36, 35, 35);
+$bkgrnd-color-grey: rgb(88, 97, 87);
+
 html {
   background-color: rgb(36, 35, 35);
-  color: rgb(216, 205, 186);
+  color: $text-color;
   display: flex;
-  align-items: center;
   flex-direction: column;
+  align-items: center;
   flex: 2 1 auto;
 }
 
@@ -11,8 +15,8 @@ button{
   border-radius: 15px;
   width: 200px;
   height: 40px;
-  background-color: rgb(88, 97, 87);
-  color: rgb(216, 205, 186);
+  background-color: $bkgrnd-color-grey;
+  color: $text-color;
 }
 
 .PresentorBox {
@@ -51,4 +55,6 @@ input{
   text-align: center;
   height: 20px;
   width: 200px;
+  background-color: $bkgrnd-color-grey;
+  color: $text-color;
 }
