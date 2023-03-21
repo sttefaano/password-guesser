@@ -26,7 +26,10 @@ function App() {
             setLogResults={setLogResults}
           />
           <Log logResults={logResults} genPassword={genPassword} />
-          <Reset setGenState={setGenState} setLogResults={setLogResults} />
+          <Reset
+            setGenPassword={setGenPassword}
+            setLogResults={setLogResults}
+          />
         </>
       );
     }

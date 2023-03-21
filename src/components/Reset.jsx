@@ -1,7 +1,9 @@
-function Reset({ setGenState, setLogResults } = props) {
+import { randomPasswordGenerator } from "../helper/helper";
+
+function Reset({ setGenPassword, setLogResults } = props) {
   function handleClick() {
-    setGenState(0);
     setLogResults([]);
+    setGenPassword(randomPasswordGenerator());
   }
   return <button onClick={handleClick}>Reset</button>;
 }
