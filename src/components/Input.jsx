@@ -1,14 +1,14 @@
 import { comparePassword } from "../helper/helper";
 
-function Input({ genPassword, setPassword, setLogResults } = props) {
+function Input({ genPassword, setLogResults, setContador, contador } = props) {
   function handleEnterPress(e) {
     let password = e.target.value;
     if (e.key === "Enter" && password.length == 4) {
-      setPassword(password);
       console.log(
         `Enter key pessed\n${password} was entered.\n${genPassword} is the pass generated.`
       );
       addResultToLog(password, comparePassword(genPassword, password).join(""));
+      setContador(contador + 1);
     }
   }
 

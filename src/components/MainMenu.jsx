@@ -1,14 +1,21 @@
 import { randomPasswordGenerator } from "../helper/helper";
 
-function Generator({ setGenPassword, setGenState } = props) {
-  function handleClick() {
+function MainMenu({ setGenPassword, setGenState } = props) {
+  function handleSingle() {
     setGenPassword(randomPasswordGenerator());
     setGenState(1);
   }
+
+  function handleMulti() {
+    setGenState(2);
+  }
   return (
-    <div className="Generator">
-      <h2>Please, click the button to generate a password.</h2>
-      <button onClick={handleClick}>Generate</button>
+    <div className="MainMenu">
+      <h2>Please, choose a game mode.</h2>
+      <button className="single-player" onClick={handleSingle}>
+        Single Player
+      </button>
+      {/* <button onClick={handleMulti}>Multi Player</button> */}
       <p>Generate a password and try to guess it</p>
       <ul>
         <li>First, click the generate button to generate a new password</li>
@@ -39,4 +46,4 @@ function Generator({ setGenPassword, setGenState } = props) {
   );
 }
 
-export default Generator;
+export default MainMenu;

@@ -39,11 +39,14 @@ button{
   }
 }
 
-.Generator{
+.MainMenu{
   display: flex;
   flex-direction: column;
   align-items: center;
   font-size: larger;
+  .single-player{
+    margin-bottom: 1rem;
+  }
 }
 
 .App{
@@ -58,4 +61,10 @@ input{
   width: 200px;
   background-color: $bkgrnd-color-grey;
   color: $text-color;
+}
+
+.buttons{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
